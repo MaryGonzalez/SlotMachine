@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<form name="slotsForm" method="post">
+
+    <img src="~/Content/slots.png" id="slots" />
+
+    <!--Images-->
+    <img src="~/Content/Items/@ViewBag.Symbol1" id="image1" />
+    <img src="~/Content/Items/@ViewBag.Symbol2" id="image2" />
+    <img src="~/Content/Items/@ViewBag.Symbol3" id="image3" />
+
+
+    <!--Print Total Money Inserted-->
+    <div id="totalInserted">
+        <label> @ViewBag.TotalInserted.ToString("c2")</label>
+    </div>
+
+    <!--User's Bet-->
+    <div>
+        <input type="text" autocomplete="off" id="deposit" name="Deposit" value="@Request.Form["Deposit"]" />
+        @Html.ValidationMessage("Deposit")
+    </div>
+
+    <!--Print Total Winnings-->
+    <div id="totalWin">
+        <label> @ViewBag.TotalWin.ToString("c2")</label>
+    </div>
+
+    <!--Buttons for New Game, New Spin, or Cash Out-->
+    <button type="submit" id="NewGame" formmethod="get">New<br />Game</button>
+    <button type="submit" onclick="spinError()" id="Spin">Spin</button>
+    <button type="submit" onclick="CashOut()" id="CashOut" formmethod="get">Cash<br />Out</button>
+
+
+
+</form>
+
+<script>
+
+    function spinError() {
+        var x = document.forms["slotsForm"]["Deposit"].value;
+        if (x == "") {
+            alert("Enter a bet");
+            return false;
+        }
+    }
+
+   function CashOut() {
+        {
+            alert("Total money inserted: " + TotalInserted + "\n Total winnings: " + TotalWin);           
+        }
+    }
+</script>

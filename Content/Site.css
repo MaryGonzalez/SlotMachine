@@ -1,0 +1,121 @@
+﻿body {
+    background-color: black;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/*.dl-horizontal dt {
+    white-space: normal;
+}*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+#slots img {
+    /*left: 50%;*/
+    position: relative;
+}
+
+#NewGame {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-family: consolas;
+    top: 785px;
+    left: 659px;
+    font-size: 20px;
+}
+
+#Spin {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-family: consolas;
+    top: 795px;
+    left: 731px;
+    font-size: 20px;
+}
+
+#CashOut {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-family: consolas;
+    top: 785px;
+    left: 805px;
+    font-size: 20px;
+}
+
+
+/*Color and position for Total Winnings*/
+#totalWin label {
+    color: crimson;
+    font-family: consolas;
+    font-size: 25px;
+    position: absolute;
+    top: 635px;
+    left: 900px;
+}
+
+#totalInserted label {
+    color: crimson;
+    font-family: consolas;
+    font-size: 25px;
+    position: absolute;
+    top: 635px;
+    left: 630px;
+}
+
+#deposit {
+    color: crimson;
+    font-family: consolas;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    position: absolute;
+    top: 635px;
+    left: 786px;
+    width: 71px;
+    text-align: center;
+}
+
+#image1 {
+    position: absolute;
+    top: 435px;
+    left: 575px;
+    width: 130px;
+}
+
+#image2 {
+    position: absolute;
+    top: 435px;
+    left: 730px;
+    width: 130px;
+}
+
+#image3 {
+    position: absolute;
+    top: 435px;
+    left: 880px;
+    width: 130px;
+}
+
